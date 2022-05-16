@@ -1,0 +1,24 @@
+@-webkit-keyframes animNavigation {
+  from {
+    -webkit-transform: translateY(-40px);
+            transform: translateY(-40px);
+    opacity: 0.3;
+  }
+  to {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    opacity: 1;
+  }
+}
+@keyframes animNavigation {
+  from {
+    -webkit-transform: translateY(-40px);
+            transform: translateY(-40px);
+    opacity: 0.3;
+  }
+  to {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    opacity: 1;
+  }
+}
