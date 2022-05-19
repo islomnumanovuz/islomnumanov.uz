@@ -1,7 +1,32 @@
-@-webkit-keyframes animNavigation {
+@-webkit-keyframes fadeInUp {
   from {
-    -webkit-transform: translateY(-40px);
-            transform: translateY(-40px);
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.fadeInUp {
+  animation-name: fadeInUp;
+  -webkit-animation-name: fadeInUp;
+  -moz-animation-name: fadeInUp;
+  -o-animation-name: fadeInUp;
+}
+
+@-webkit-keyframes animNav {
+  from {
+    -webkit-transform: translateY(-30px);
+            transform: translateY(-30px);
     opacity: 0.3;
   }
   to {
@@ -10,15 +35,77 @@
     opacity: 1;
   }
 }
-@keyframes animNavigation {
+
+@keyframes animNav {
   from {
-    -webkit-transform: translateY(-40px);
-            transform: translateY(-40px);
+    -webkit-transform: translateY(-30px);
+            transform: translateY(-30px);
     opacity: 0.3;
   }
   to {
     -webkit-transform: translateY(0);
             transform: translateY(0);
     opacity: 1;
+  }
+}
+
+.animNav {
+  animation-name: animNav;
+  -webkit-animation-name: animNav;
+  -moz-animation-name: animNav;
+  -o-animation-name: animNav;
+}
+
+@-webkit-keyframes anim {
+  0% {
+    border-bottom-left-radius: -70%;
+    border-top-left-radius: -23%;
+    border-bottom-right-radius: -50%;
+    border-top-right-radius: -48%;
+  }
+  25% {
+    border-bottom-left-radius: 70%;
+    border-top-left-radius: 23%;
+    border-bottom-right-radius: 50%;
+    border-top-right-radius: 48%;
+  }
+  50% {
+    border-bottom-left-radius: 35%;
+    border-top-left-radius: 25%;
+    border-bottom-right-radius: 25%;
+    border-top-right-radius: 24%;
+  }
+  100% {
+    border-bottom-left-radius: 70%;
+    border-top-left-radius: 23%;
+    border-bottom-right-radius: 50%;
+    border-top-right-radius: 48%;
+  }
+}
+
+@keyframes anim {
+  0% {
+    border-bottom-left-radius: -70%;
+    border-top-left-radius: -23%;
+    border-bottom-right-radius: -50%;
+    border-top-right-radius: -48%;
+  }
+  25% {
+    border-bottom-left-radius: 70%;
+    border-top-left-radius: 23%;
+    border-bottom-right-radius: 50%;
+    border-top-right-radius: 48%;
+  }
+  50% {
+    border-bottom-left-radius: 35%;
+    border-top-left-radius: 25%;
+    border-bottom-right-radius: 25%;
+    border-top-right-radius: 24%;
+  }
+  100% {
+    border-bottom-left-radius: 70%;
+    border-top-left-radius: 23%;
+    border-bottom-right-radius: 50%;
+    border-top-right-radius: 48%;
   }
 }

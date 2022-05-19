@@ -25,18 +25,21 @@ const NavbarSection = () => {
 
   return (
     <>
-      <Navbar className={x.join(" ")} light expand="md">
+      <Navbar className={x.join(" ")} dark expand="md">
         <Link to="/" className="navbar-brand">
           <b>User</b>Dev
         </Link>
         <NavbarToggler onClick={toggle} />
         <Collapse isOpen={isOpen} navbar>
           <Nav className="ml-auto" navbar>
-            <NavItem>
-              <Link to="/">Home</Link> <br />
+            <NavItem className="active">
+              <Link to="/" >Home</Link> <br />
             </NavItem>
             <NavItem>
-              <Link to="/">Portfolio</Link>
+              <Link to="/about">About</Link>
+            </NavItem>
+            <NavItem>
+              <Link to="/portfolio">Portfolio</Link>
             </NavItem>
             <NavItem>
               <Link to="/">Blog</Link>

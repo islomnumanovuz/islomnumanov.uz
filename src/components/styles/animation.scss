@@ -1,12 +1,104 @@
+// Home page
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.fadeInUp {
+  animation-name: fadeInUp;
+  -webkit-animation-name: fadeInUp;
+  -moz-animation-name: fadeInUp;
+  -o-animation-name: fadeInUp;
+}
+@-moz-keyframes fadeInUp {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@-o-keyframes fadeInUp {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
 // Navbar animation
 
-@keyframes animNavigation {
+// Navbar animation
+
+@keyframes animNav {
   from {
-    transform: translateY(-40px);
+    transform: translateY(-30px);
     opacity: 0.3;
   }
   to {
     transform: translateY(0);
     opacity: 1;
+  }
+}
+
+@-moz-keyframes animNav {
+  from {
+    transform: translateY(-40px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@-o-keyframes animNav {
+  from {
+    transform: translateY(-40px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+.animNav {
+  animation-name: animNav;
+  -webkit-animation-name: animNav;
+  -moz-animation-name: animNav;
+  -o-animation-name: animNav;
+}
+
+@keyframes anim {
+  0% {
+    border-bottom-left-radius: -70%;
+    border-top-left-radius: -23%;
+    border-bottom-right-radius: -50%;
+    border-top-right-radius: -48%;
+  }
+  25% {
+    border-bottom-left-radius: 70%;
+    border-top-left-radius: 23%;
+    border-bottom-right-radius: 50%;
+    border-top-right-radius: 48%;
+  }
+  50% {
+    border-bottom-left-radius: 35%;
+    border-top-left-radius: 25%;
+    border-bottom-right-radius: 25%;
+    border-top-right-radius: 24%;
+  }
+  100% {
+    border-bottom-left-radius: 70%;
+    border-top-left-radius: 23%;
+    border-bottom-right-radius: 50%;
+    border-top-right-radius: 48%;
   }
 }
