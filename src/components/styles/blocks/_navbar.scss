@@ -1,6 +1,6 @@
 /* Navbar */
 nav {
-  padding: 15px 80px;
+  padding: 15px 0;
   .navbar-brand {
     color: #fff !important;
     text-decoration: none;
@@ -56,7 +56,7 @@ nav {
         transform: scale(1.2);
       }
     }
-    .active.nav-item{
+    .active.nav-item {
       a {
         position: relative;
         text-decoration: none;

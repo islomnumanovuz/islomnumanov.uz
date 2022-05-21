@@ -5,7 +5,12 @@ html {
   display: inline-block;
 }
 body {
+  min-height: 100vh;
   background-color: #000 !important;
   font-family: "Press Start 2P", cursive;
   overflow-x: hidden;
+  background-image: url("../../assets/left-blur.png"),
+    url("../../assets/right-blur.png");
+  background-repeat: no-repeat, no-repeat;
+  background-size: cover, 100% 80%;
 }

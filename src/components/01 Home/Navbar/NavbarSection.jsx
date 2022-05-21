@@ -25,34 +25,36 @@ const NavbarSection = () => {
 
   return (
     <>
-      <Navbar className={x.join(" ")} dark expand="md">
-        <Link to="/" className="navbar-brand">
-          <b>User</b>Dev
-        </Link>
-        <NavbarToggler onClick={toggle} />
-        <Collapse isOpen={isOpen} navbar>
-          <Nav className="ml-auto" navbar>
-            <NavItem className="active">
-              <Link to="/" >Home</Link> <br />
-            </NavItem>
-            <NavItem>
-              <Link to="/about">About</Link>
-            </NavItem>
-            <NavItem>
-              <Link to="/portfolio">Portfolio</Link>
-            </NavItem>
-            <NavItem>
-              <Link to="/">Blog</Link>
-            </NavItem>
-            <NavItem>
-              <Link to="/">Setup</Link>
-            </NavItem>
-            <NavItem>
-              <Link to="/">Contact</Link>
-            </NavItem>
-          </Nav>
-        </Collapse>
-      </Navbar>
+      <div className="container">
+        <Navbar className={x.join(" ")} dark expand="md">
+          <Link to="/" className="navbar-brand">
+            <b>User</b>Dev
+          </Link>
+          <NavbarToggler onClick={toggle} />
+          <Collapse isOpen={isOpen} navbar>
+            <Nav className="ml-auto" navbar>
+              <NavItem className="active">
+                <Link to="/">Home</Link> <br />
+              </NavItem>
+              <NavItem>
+                <Link to="/about">About</Link>
+              </NavItem>
+              <NavItem>
+                <Link to="/portfolio">Portfolio</Link>
+              </NavItem>
+              <NavItem>
+                <Link to="/">Blog</Link>
+              </NavItem>
+              <NavItem>
+                <Link to="/">Setup</Link>
+              </NavItem>
+              <NavItem>
+                <Link to="/">Contact</Link>
+              </NavItem>
+            </Nav>
+          </Collapse>
+        </Navbar>
+      </div>
     </>
   );
 };

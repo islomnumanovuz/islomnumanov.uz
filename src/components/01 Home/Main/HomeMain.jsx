@@ -9,7 +9,6 @@ import TelegramIcon from "@material-ui/icons/Telegram";
 import FacebookIcon from "@material-ui/icons/Facebook";
 import LinkIcon from "@material-ui/icons/Link";
 import Typewriter from "typewriter-effect";
-/* import AboutInfo from "../../02 About/AboutInfo"; */
 
 const HomeMain = () => {
   const [portfolios, setPortfolios] = useState([]);
@@ -25,13 +24,13 @@ const HomeMain = () => {
       <Reveal effect="animNav" duration="750">
         <NavbarSection />
       </Reveal>
-      <div className="home-info">
+      <>
         {portfolios.map((portfolio) => (
           <>
-            <div className="about-info">
+            <div className="home-info">
               <Reveal effect="fadeInUp" duration="800">
-                <h4 className="about-info__title">Welcome!</h4>
-                <h2 className="about-info__subtitle">
+                <h4 className="home-info__title">Welcome!</h4>
+                <h2 className="home-info__subtitle">
                   {portfolio.title + " "}
                   <Typewriter
                     className="type-animation"
@@ -47,7 +46,7 @@ const HomeMain = () => {
                     }}
                   />
                 </h2>
-                <p className="about-info__description">Developer</p>
+                <p className="home-info__description">Developer</p>
                 <div className="button-group">
                   <Link className="linkBtn" to="/">
                     Read more
@@ -121,7 +120,7 @@ const HomeMain = () => {
             </div>
           </>
         ))}
-      </div>
+      </>
       {/* <AboutInfo /> */}
     </>
   );

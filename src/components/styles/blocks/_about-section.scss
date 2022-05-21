@@ -1,0 +1,29 @@
+.about-info {
+  margin-top: 100px;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  &__image {
+    width: 450px;
+    margin-right: 20px;
+    img {
+      display: block;
+      width: 100%;
+      border-radius: 25px;
+    }
+  }
+  &__text {
+    color: $bg-black-50;
+    flex: 2;
+  }
+}
+.about-me__title {
+  font-size: 20px;
+}
+.about-me__subtitle {
+  margin: 20px 0;
+}
+.about-me__description {
+  line-height: 30px;
+}
