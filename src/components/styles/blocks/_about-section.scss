@@ -1,11 +1,12 @@
 .about-info {
-  margin-top: 100px;
+  padding: 100px 0;
   min-height: 100vh;
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
   &__image {
-    width: 450px;
+    flex: 1.2;
+    align-self: center;
     margin-right: 20px;
     img {
       display: block;
@@ -25,5 +26,28 @@
   margin: 20px 0;
 }
 .about-me__description {
-  line-height: 30px;
+  line-height: 24px;
+  opacity: 0.7;
+}
+.about-me__info {
+  margin-top: 20px;
+  & > div {
+    margin-bottom: 12px;
+    font-weight: 300;
+  }
+  span {
+    color: #fff;
+    display: inline-block;
+    position: relative;
+    font-size: 18px;
+    font-weight: 600;
+    width: 150px;
+    margin-right: 30px;
+    opacity: 1 !important;
+    &::after {
+      content: ":";
+      position: absolute;
+      right: 0;
+    }
+  }
 }

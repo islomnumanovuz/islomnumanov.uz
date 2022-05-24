@@ -4,6 +4,9 @@ html {
 .Typewriter {
   display: inline-block;
 }
+a {
+  text-decoration: none !important;
+}
 body {
   min-height: 100vh;
   background-color: #000 !important;
@@ -13,4 +16,20 @@ body {
     url("../../assets/right-blur.png");
   background-repeat: no-repeat, no-repeat;
   background-size: cover, 100% 80%;
+}
+.btn-default {
+  color: rgb(0, 0, 0) !important;
+  font-size: 14px;
+  margin-top: 30px;
+  text-transform: capitalize;
+  padding: 23px 40px;
+  letter-spacing: 0.6px;
+  font-weight: 600;
+  background-color: #fff !important;
+  line-height: 10px;
+  border-radius: 30px !important;
+  border: 1px solid #fff !important;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out 0s;
+  position: relative;
 }

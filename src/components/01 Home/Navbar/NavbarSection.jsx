@@ -42,7 +42,7 @@ const NavbarSection = () => {
               <NavItem>
                 <Link to="/portfolio">Portfolio</Link>
               </NavItem>
-              <NavItem>
+              {/* <NavItem>
                 <Link to="/">Blog</Link>
               </NavItem>
               <NavItem>
@@ -50,7 +50,7 @@ const NavbarSection = () => {
               </NavItem>
               <NavItem>
                 <Link to="/">Contact</Link>
-              </NavItem>
+              </NavItem> */}
             </Nav>
           </Collapse>
         </Navbar>

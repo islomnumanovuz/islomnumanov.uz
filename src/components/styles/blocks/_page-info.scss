@@ -1,0 +1,10 @@
+.titles {
+  text-align: center;
+  margin-top: 75px;
+  .title1 {
+    @include PageTitle1();
+  }
+  .title2 {
+    @include PageTitle2();
+  }
+}

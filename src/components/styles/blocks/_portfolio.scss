@@ -1,0 +1,59 @@
+.row {
+  .col-md-12 {
+    padding-top: 50px;
+    .projectCard {
+      display: flex;
+      justify-content: space-between;
+      margin: 50px 0;
+      .projectImage {
+        width: 50%;
+      }
+      .cardTitles {
+        margin: 30px 50px;
+        .projectAbout {
+          .projectName {
+            color: white;
+            font-weight: 600;
+            font-family: "Montserrat", "sans-serif";
+          }
+          .projectDesc {
+            color: #aaaaaa;
+            font-family: "Montserrat", "sans-serif";
+            margin: 10px 0 50px;
+          }
+        }
+        .projectButtons {
+          .buttons {
+            background-color: #2b2b2b;
+            padding: 17px 35px;
+            color: #ffffff;
+            font-size: 20px;
+            text-decoration: none;
+            font-family: "Montserrat", "sans-serif";
+            font-weight: 500;
+            .svg {
+              margin: 0 10px 0;
+            }
+            &:nth-child(2) {
+              background-color: $homeButtonColor2;
+              margin-left: 30px;
+            }
+          }
+        }
+      }
+    }
+    &:nth-child(even) {
+      .projectCard {
+        flex-direction: row-reverse;
+        .cardTitles {
+          margin: 30px 0;
+          .projectAbout {
+            .projectDesc {
+              width: 75%;
+            }
+          }
+        }
+      }
+    }
+  }
+}
