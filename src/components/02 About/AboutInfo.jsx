@@ -3,9 +3,10 @@ import db from "../firebase/config.js";
 import { Reveal } from "react-reveal";
 import NavbarSection from "../01 Home/Navbar/NavbarSection";
 import hand from "../../assets/hand-removebg-preview.png";
-import PageInfo from "../03 Portfolio/PageInfo.jsx";
+import PageInfo from "./PageInfo.jsx";
 import Footer from "../04 Footer/Footer.jsx";
 import LinkIcon from "@material-ui/icons/Link";
+import { Link } from "react-router-dom";
 
 const AboutInfo = () => {
   const [portfolios, setPortfolios] = useState([]);
@@ -84,9 +85,13 @@ const AboutInfo = () => {
               </div>
             </div>
             <div className="about-me__buttons btn-group">
-              <a href="/" target="_blank" className="btn-default btn">
-                <LinkIcon /> CV in uzbek
-              </a>
+              <Link className="btn-19" to="/">
+                <span className="text-container">
+                  <span className="text">
+                    <LinkIcon /> CV in uzbek
+                  </span>
+                </span>
+              </Link>
             </div>
           </div>
         </Reveal>

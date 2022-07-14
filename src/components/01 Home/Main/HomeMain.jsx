@@ -7,7 +7,6 @@ import LinkedInIcon from "@material-ui/icons/LinkedIn";
 import GitHubIcon from "@material-ui/icons/GitHub";
 import TelegramIcon from "@material-ui/icons/Telegram";
 import FacebookIcon from "@material-ui/icons/Facebook";
-import LinkIcon from "@material-ui/icons/Link";
 import Typewriter from "typewriter-effect";
 
 const HomeMain = () => {
@@ -35,10 +34,7 @@ const HomeMain = () => {
                   <Typewriter
                     className="type-animation"
                     options={{
-                      strings: [
-                        "Front-end developer",
-                        "CEO HiDevs - Uzbekistan",
-                      ],
+                      strings: ["Front-end developer", "from Uzbekistan"],
                       autoStart: true,
                       loop: true,
                       delay: 150,
@@ -48,11 +44,15 @@ const HomeMain = () => {
                 </h2>
                 <p className="home-info__description">Developer</p>
                 <div className="button-group">
-                  <Link className="linkBtn" to="/">
-                    Read more
+                  <Link className="btn-19" to="/">
+                    <span className="text-container">
+                      <span className="text">Read more</span>
+                    </span>
                   </Link>
-                  <Link className="linkBtn" to="/">
-                    <LinkIcon /> Portfolio
+                  <Link className="btn-19" to="/">
+                    <span className="text-container">
+                      <span className="text">Portfolio</span>
+                    </span>
                   </Link>
                 </div>
                 <div className="socialNet">

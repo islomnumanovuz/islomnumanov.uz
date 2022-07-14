@@ -1,6 +1,16 @@
 html {
   overflow-x: hidden;
 }
+::-webkit-scrollbar {
+  width: 4px !important;
+}
+::-webkit-scrollbar-thumb {
+  background-color: #0d6efd;
+  border-radius: 20% !important;
+}
+::-webkit-scrollbar-track {
+  background-color: #000000;
+}
 .Typewriter {
   display: inline-block;
 }
@@ -32,4 +42,84 @@ body {
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out 0s;
   position: relative;
+}
+
+.btn-19 {
+  --width: 200px;
+  width: var(--width);
+  text-align: center;
+  display: inline-block;
+  box-sizing: border-box;
+  padding: 12px 10px;
+  margin: 5px;
+  border-radius: 999px;
+
+  color: white;
+  background: none;
+
+  position: relative;
+  overflow: hidden;
+
+  text-transform: uppercase;
+  border: 1px solid white !important;
+
+  & .text-container {
+    display: block;
+    position: relative;
+    overflow: hidden;
+  }
+
+  & .text {
+    display: block;
+    position: relative;
+
+    font-weight: 900;
+  }
+
+  &:hover .text {
+    animation: move-up-alternate 0.3s forwards;
+    will-change: transform;
+  }
+  @keyframes move-up-alternate {
+    from {
+      transform: translateY(0%);
+    }
+    50% {
+      transform: translateY(80%);
+    }
+    51% {
+      transform: translateY(-80%);
+    }
+    100% {
+      transform: translateY(0%);
+    }
+  }
+
+  &:before,
+  &:after {
+    --w: calc(var(--width) / 4);
+    content: "";
+    z-index: -1;
+    height: 100%;
+    width: var(--w);
+    position: absolute;
+    background: white;
+    box-shadow: calc(2 * var(--w)) 0 0 0 white;
+    transition: transform 0.2s;
+    will-change: transform;
+  }
+  &:before {
+    top: -125%;
+    left: 0;
+  }
+  &:after {
+    top: 125%;
+    left: var(--w);
+  }
+  &:hover:before {
+    transform: translateY(125%);
+  }
+  &:hover:after {
+    transform: translateY(-125%);
+  }
 }

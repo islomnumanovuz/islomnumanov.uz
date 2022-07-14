@@ -109,3 +109,36 @@
     border-top-right-radius: 48%;
   }
 }
+
+@-webkit-keyframes portfolioAnim {
+  from {
+    -webkit-transform: translateY(90px);
+            transform: translateY(90px);
+    opacity: 0.3;
+  }
+  to {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes portfolioAnim {
+  from {
+    -webkit-transform: translateY(90px);
+            transform: translateY(90px);
+    opacity: 0.3;
+  }
+  to {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.portfolioAnim {
+  animation-name: portfolioAnim;
+  -webkit-animation-name: portfolioAnim;
+  -moz-animation-name: portfolioAnim;
+  -o-animation-name: portfolioAnim;
+}

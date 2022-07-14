@@ -57,3 +57,325 @@
     }
   }
 }
+
+//  Portfolio
+
+@media screen and (max-width: 1200px) {
+  .titles {
+    h3 {
+      font-size: 35px !important;
+    }
+    p {
+      font-size: 25px !important;
+    }
+  }
+  .row {
+    .col-md-12 {
+      .projectCard {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .projectImage {
+          width: 50%;
+        }
+        .cardTitles {
+          margin: 30px 50px;
+          .projectAbout {
+            .projectName {
+              font-size: 30px;
+            }
+            .projectDesc {
+              font-size: 20px;
+            }
+          }
+        }
+        .projectButtons {
+          a {
+            padding: 15px 10px !important;
+            font-size: 22px !important;
+            &:nth-child(2) {
+              margin-left: 16px !important;
+            }
+          }
+        }
+      }
+      &:nth-child(even) {
+        .projectCard {
+          .cardTitles {
+            .projectAbout {
+              .projectDesc {
+                width: 100%;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .titles {
+    h3 {
+      font-size: 35px !important;
+    }
+    p {
+      font-size: 25px !important;
+    }
+  }
+  .row {
+    .col-md-12 {
+      padding: 15px;
+      .projectCard {
+        display: inline-block;
+        .projectImage {
+          width: 100%;
+        }
+        .cardTitles {
+          margin: 30px 0;
+          .projectAbout {
+            .projectName {
+              font-size: 30px;
+            }
+            .projectDesc {
+              font-size: 20px;
+              width: 75%;
+            }
+          }
+        }
+        .projectButtons {
+          a {
+            padding: 15px 10px !important;
+            font-size: 18px !important;
+            &:nth-child(2) {
+              margin-left: 10px !important;
+            }
+          }
+        }
+      }
+      &:nth-child(even) {
+        .projectCard {
+          .cardTitles {
+            .projectAbout {
+              .projectDesc {
+                width: 100%;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .titles {
+    h3 {
+      font-size: 35px !important;
+    }
+    p {
+      font-size: 25px !important;
+    }
+  }
+  .row {
+    .col-md-12 {
+      padding-top: 0;
+      .projectCard {
+        display: inline-block;
+        .projectImage {
+          width: 100%;
+        }
+        .cardTitles {
+          margin: 30px 0;
+          .projectAbout {
+            .projectName {
+              font-size: 30px;
+            }
+            .projectDesc {
+              font-size: 20px;
+            }
+          }
+        }
+        .projectButtons {
+          a {
+            padding: 15px 10px !important;
+            font-size: 18px !important;
+            &:nth-child(2) {
+              margin-left: 10px !important;
+            }
+          }
+        }
+      }
+      &:nth-child(even) {
+        .projectCard {
+          .cardTitles {
+            .projectAbout {
+              .projectDesc {
+                width: 100%;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .titles {
+    h3 {
+      font-size: 35px !important;
+    }
+    p {
+      font-size: 25px !important;
+    }
+  }
+  .row {
+    .col-md-12 {
+      padding-top: 0;
+      .projectCard {
+        display: inline-block;
+        .projectImage {
+          width: 100%;
+        }
+        .cardTitles {
+          margin: 30px 0;
+          .projectAbout {
+            .projectName {
+              font-size: 25px;
+            }
+            .projectDesc {
+              font-size: 18px;
+            }
+          }
+        }
+        .projectButtons {
+          a {
+            padding: 15px 10px !important;
+            font-size: 18px !important;
+            &:nth-child(2) {
+              margin-left: 10px !important;
+            }
+          }
+        }
+      }
+      &:nth-child(even) {
+        .projectCard {
+          .cardTitles {
+            .projectAbout {
+              .projectDesc {
+                width: 100%;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 370px) {
+  .titles {
+    h3 {
+      font-size: 30px !important;
+    }
+    p {
+      font-size: 20px !important;
+    }
+  }
+  .row {
+    .col-md-12 {
+      padding-top: 0;
+      .projectCard {
+        display: inline-block;
+        .projectImage {
+          width: 100%;
+        }
+        .cardTitles {
+          margin: 30px 0;
+          .projectAbout {
+            .projectName {
+              font-size: 20px;
+            }
+            .projectDesc {
+              font-size: 15px;
+            }
+          }
+        }
+        .projectButtons {
+          a {
+            padding: 13px 10px !important;
+            font-size: 15px !important;
+            &:nth-child(2) {
+              margin-left: 10px !important;
+            }
+          }
+        }
+      }
+      &:nth-child(even) {
+        .projectCard {
+          .cardTitles {
+            .projectAbout {
+              .projectDesc {
+                width: 100%;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 320px) and (max-width: 330px) {
+  .titles {
+    h3 {
+      font-size: 30px !important;
+    }
+    p {
+      font-size: 20px !important;
+    }
+  }
+  .row {
+    .col-md-12 {
+      padding-top: 0;
+      .projectCard {
+        display: inline-block;
+        .projectImage {
+          width: 100%;
+        }
+        .cardTitles {
+          margin: 30px 0;
+          .projectAbout {
+            .projectName {
+              font-size: 20px;
+            }
+            .projectDesc {
+              font-size: 15px;
+            }
+          }
+        }
+        .projectButtons {
+          a {
+            padding: 13px 10px !important;
+            font-size: 15px !important;
+            &:nth-child(2) {
+              margin-left: 10px !important;
+            }
+          }
+        }
+      }
+      &:nth-child(even) {
+        .projectCard {
+          .cardTitles {
+            .projectAbout {
+              .projectDesc {
+                width: 100%;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
