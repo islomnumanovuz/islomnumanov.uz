@@ -4,7 +4,7 @@ function Footer() {
   return (
     <div className="footer">
       <p>
-        © Sanjarbek`s portfolio 2022 - {new Date().getFullYear()} | Made with{" "}
+        © Islom's portfolio 2021 - {new Date().getFullYear()} | Made with{" "}
         <FavoriteIcon />{" "}
       </p>
     </div>

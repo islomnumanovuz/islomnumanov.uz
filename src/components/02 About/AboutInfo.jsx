@@ -6,7 +6,7 @@ import hand from "../../assets/hand-removebg-preview.png";
 import PageInfo from "./PageInfo.jsx";
 import Footer from "../04 Footer/Footer.jsx";
 import LinkIcon from "@material-ui/icons/Link";
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 
 const AboutInfo = () => {
   const [portfolios, setPortfolios] = useState([]);
@@ -55,29 +55,35 @@ const AboutInfo = () => {
             </h2>
             <p className="about-me__description">
               I'm a Software engineer at{" "}
-              <a href="https://codemotion.ninja/">Bayazit</a>. I am passionate
-              about building excellent software that improves the lives of those
-              around me. I specialize in creating software for clients ranging
-              from individuals and small-businesses all the way to large
-              enterprise corporations. What would you do if you had a software
-              expert available at your fingertips?
+              <a
+                target={"_blank"}
+                rel="noreferrer"
+                href="https://www.bayzat.com/"
+              >
+                Bayzat
+              </a>
+              . I am passionate about building excellent software that improves
+              the lives of those around me. I specialize in creating software
+              for clients ranging from individuals and small-businesses all the
+              way to large enterprise corporations. What would you do if you had
+              a software expert available at your fingertips?
             </p>
             <div className="about-me__info">
               <div className="about-me__info--name">
-                <span>Full Name</span>
-                Ahmadjon Abdusamadov
+                <span>Name</span>
+                Islom
               </div>
               <div className="about-me__info--age">
                 <span>Age</span>
-                23
+                21
               </div>
               <div className="about-me__info--address">
                 <span>Address</span>
-                Uzbekistan, Jizzax // city
+                Uzbekistan, Tashkent
               </div>
               <div className="about-me__info--phone">
                 <span>Phone Number</span>
-                +99 897 129 97 77
+                +998 99 998 66 27
               </div>
               <div className="about-me__info--email">
                 <span>Email</span>
@@ -85,13 +91,18 @@ const AboutInfo = () => {
               </div>
             </div>
             <div className="about-me__buttons btn-group">
-              <Link className="btn-19" to="/">
+              <a
+                className="btn-19"
+                href="https://drive.google.com/file/d/11QoHFihnCrYCZTVxLvB01uzPzZBpvqeO/view?usp=sharing"
+                target={"_blank"}
+                rel="noreferrer"
+              >
                 <span className="text-container">
                   <span className="text">
                     <LinkIcon /> CV in uzbek
                   </span>
                 </span>
-              </Link>
+              </a>
             </div>
           </div>
         </Reveal>

@@ -25,7 +25,7 @@ export default function Reviews() {
   useEffect(() => {
     let slider = setInterval(() => {
       setIndex(index + 1);
-    }, 5000);
+    }, 6000);
     return () => {
       clearInterval(slider);
     };

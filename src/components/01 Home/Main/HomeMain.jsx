@@ -6,7 +6,6 @@ import { Link } from "react-router-dom";
 import LinkedInIcon from "@material-ui/icons/LinkedIn";
 import GitHubIcon from "@material-ui/icons/GitHub";
 import TelegramIcon from "@material-ui/icons/Telegram";
-import FacebookIcon from "@material-ui/icons/Facebook";
 import Typewriter from "typewriter-effect";
 
 const HomeMain = () => {
@@ -34,7 +33,11 @@ const HomeMain = () => {
                   <Typewriter
                     className="type-animation"
                     options={{
-                      strings: ["Front-end developer", "from Uzbekistan"],
+                      strings: [
+                        "Front-end developer",
+                        "from Uzbekistan",
+                        "Freelancer",
+                      ],
                       autoStart: true,
                       loop: true,
                       delay: 150,
@@ -44,29 +47,41 @@ const HomeMain = () => {
                 </h2>
                 <p className="home-info__description">Developer</p>
                 <div className="button-group">
-                  <Link className="btn-19" to="/">
+                  <Link className="btn-19" to={"/about"}>
                     <span className="text-container">
-                      <span className="text">Read more</span>
+                      <span className="text">About me</span>
                     </span>
                   </Link>
-                  <Link className="btn-19" to="/">
+                  <Link className="btn-19" to={"/portfolio"}>
                     <span className="text-container">
                       <span className="text">Portfolio</span>
                     </span>
                   </Link>
                 </div>
                 <div className="socialNet">
-                  <a className="links" href="#" target="_blank">
+                  <a
+                    className="links"
+                    href="https://github.com/pandadevuz"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
                     <GitHubIcon className="iconSvg" />
                   </a>
-                  <a className="links" href="#" target="_blank">
+                  <a
+                    className="links"
+                    href="https://www.linkedin.com/in/islomdev/"
+                    rel="noreferrer"
+                    target="_blank"
+                  >
                     <LinkedInIcon className="iconSvg" />
                   </a>
-                  <a className="links" href="#" target="_blank">
+                  <a
+                    className="links"
+                    href="https://t.me/freedevuz"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
                     <TelegramIcon className="iconSvg" />
-                  </a>
-                  <a className="links" href="#" target="_blank">
-                    <FacebookIcon className="iconSvg" />
                   </a>
                 </div>
                 <div className="effect-wrap">

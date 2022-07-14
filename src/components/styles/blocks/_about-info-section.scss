@@ -27,10 +27,21 @@
 }
 .about-me__description {
   line-height: 24px;
-  opacity: 0.7;
+  color: rgb(174, 174, 174);
+  a {
+    color: rgb(174, 174, 174);
+    border-bottom: 1px solid #fff;
+    font-weight: 700;
+  }
+}
+.about-me__info--email {
+  a {
+    border-bottom: 1px solid #fff;
+    color: #fff !important;
+  }
 }
 .about-me__info {
-  margin-top: 20px;
+  margin: 30px 0;
   & > div {
     margin-bottom: 12px;
     font-weight: 300;
