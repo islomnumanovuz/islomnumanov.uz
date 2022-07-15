@@ -8,8 +8,10 @@ const people = [
     image: img1,
     name: "Kamoliddin Abdujamilov",
     title: "Senior Software Engineer at EPAM Systems",
-    quote:
-      "Fingerstache umami squid, kinfolk subway tile selvage tumblr man braid viral kombucha gentrify fanny pack raclette pok pok mustache.",
+    quote: `
+      Islom's a clear communicator with the tenacity and confidence to really dig in to tricky design
+      scenarios and the collaborative friction that's needed to produce excellent work.
+    `,
   },
   {
     id: 2,

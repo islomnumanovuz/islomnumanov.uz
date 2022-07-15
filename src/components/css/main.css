@@ -1564,7 +1564,7 @@ Variables
 .section-center {
   margin: 0 auto;
   margin-top: 4rem;
-  margin-bottom: 4rem;
+  margin-bottom: 6rem;
   width: 80vw;
   height: 450px;
   max-width: 800px;
@@ -1655,19 +1655,6 @@ article h4 {
     width: 2rem;
     height: 2rem;
     font-size: 1.5rem;
-  }
-}
-
-@media only screen and (max-width: 576px) {
-  .prev,
-  .next {
-    top: 430px;
-  }
-  .prev {
-    left: 100px;
-  }
-  .next {
-    right: 100px;
   }
 }
 
