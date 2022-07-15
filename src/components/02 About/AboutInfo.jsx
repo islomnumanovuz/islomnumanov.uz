@@ -93,7 +93,7 @@ const AboutInfo = () => {
             <div className="about-me__buttons btn-group">
               <a
                 className="btn-19"
-                href="../../assets/Resume.pdf"
+                href="https://drive.google.com/file/d/11QoHFihnCrYCZTVxLvB01uzPzZBpvqeO/view?usp=sharing"
                 target={"_blank"}
                 rel="noreferrer"
               >
